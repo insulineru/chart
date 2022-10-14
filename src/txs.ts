@@ -54,7 +54,7 @@ const markers = data.map<SeriesMarker<Time>>(el => ({
   position: 'inBar',
   color: 'black',
   shape: 'circle',
-  text: el.name,
+  text: `${el.name} ${el.text ? el.text : ''}`,
   size: 1,
 }));
 
